@@ -485,7 +485,7 @@ void fauxmoESP::_onTCPClient(AsyncClient *client) {
         c->free();
         delete c;
     });
-    client->close(true);
+    client->close();
 
 }
 
